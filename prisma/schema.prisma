@@ -29,6 +29,7 @@ datasource db {
    artistId Int
    playlists Playlist[]
    duration Int
+   url String
  }
 
  model Artist {
