@@ -78,7 +78,6 @@ const Sidebar = () => {
               <MenuItem menu={item} />
             ))}
           </List>
-          bla
         </Box>
         <Divider color="gray.800" marginTop="20px" />
         <Box height="66%" overflowY="auto" paddingY="20px">
