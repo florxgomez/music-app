@@ -8,7 +8,7 @@ const Home = ({ artists }) => {
   const { user } = useMe();
   return (
     <GradientLayout
-      color="gray"
+      color="purple"
       subtitle="Profile"
       title={user ? `${user?.firstName} ${user?.lastName}` : ""}
       description={`${user?.playlistsCount} public playlists`}
@@ -27,7 +27,7 @@ const Home = ({ artists }) => {
               <Box bg="gray.900" borderRadius="4px" padding="15px" width="100%">
                 <Image
                   src={artist.avatar}
-                  width="180px"
+                  width="200px"
                   height="200px"
                   borderRadius="100%"
                 />
