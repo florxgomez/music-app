@@ -4,7 +4,6 @@ import fetcher from "./fetcher";
 // hook to get a user making only one call
 export const useMe = () => {
   const { data, error } = useSWR("/me", fetcher);
-
   return {
     user: data,
     loading: !data && !error,

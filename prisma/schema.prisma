@@ -18,6 +18,8 @@ datasource db {
    email String @unique
    password String
    playlists Playlist[]
+   firstName String 
+   lastName String
  }
 
  model Song {
@@ -38,6 +40,7 @@ datasource db {
    updatedAt DateTime @updatedAt
    songs Song[]
    name String @unique
+   avatar String
  }
 
  model Playlist {

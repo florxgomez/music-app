@@ -1,9 +1,12 @@
 export const artistsData: {
   name: string;
   songs: any[];
+  avatar: string;
 }[] = [
   {
     name: "Glitch",
+    avatar:
+      "https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1216&q=80",
     songs: [
       {
         name: "Fermi Paradox",
@@ -15,6 +18,8 @@ export const artistsData: {
   },
   {
     name: "Purple Cat",
+    avatar:
+      "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     songs: [
       {
         name: "Long Day",
@@ -25,6 +30,8 @@ export const artistsData: {
   },
   {
     name: "Ben Sound",
+    avatar:
+      "https://images.unsplash.com/photo-1499424017184-418f6808abf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     songs: [
       {
         name: "The Elevator Bossa Nova",
@@ -35,6 +42,8 @@ export const artistsData: {
   },
   {
     name: "LiQWYD",
+    avatar:
+      "https://images.unsplash.com/photo-1535325019257-3f8a7994a3f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     songs: [
       {
         name: "Winter",
@@ -45,6 +54,8 @@ export const artistsData: {
   },
   {
     name: "FSM Team",
+    avatar:
+      "https://images.unsplash.com/photo-1562167141-4dde86532b8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=732&q=80",
     songs: [
       {
         name: "Eternal Springtime",

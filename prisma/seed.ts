@@ -12,6 +12,7 @@ const run = async () => {
         update: {},
         create: {
           name: artist.name,
+          avatar: artist.avatar,
           songs: {
             create: artist.songs.map((song) => ({
               name: song.name,
@@ -31,6 +32,8 @@ const run = async () => {
     create: {
       email: "user@test.com",
       password: bycrypt.hashSync("password", salt),
+      firstName: "Florencia",
+      lastName: "Gomez",
     },
   });
 
