@@ -8,8 +8,10 @@ const Artist = ({ artist }) => {
       color="gray"
       roundImage={false}
       title={artist.name}
+      subtitle="TOP ARTIST"
       description={`${Math.floor(Math.random() * 1000000)} monthly listeners`}
       image={artist.avatar}
+      isArtist={true}
     >
       <SongsTable songs={artist.songs} />
     </GradientLayout>

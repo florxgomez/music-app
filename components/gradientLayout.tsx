@@ -9,6 +9,7 @@ const GradientLayout = ({
   description,
   roundImage,
   image,
+  isArtist,
 }) => {
   return (
     <Box
@@ -16,7 +17,12 @@ const GradientLayout = ({
       overflowY="auto"
       bgGradient={`linear(${color}.500 0%, ${color}.600 15%, ${color}.700 40%, rgba(0,0,0,0.95) 75%)`}
     >
-      <Flex bg={`${color}.600`} padding="40px" align="end">
+      <Flex
+        bg={`${color}.600`}
+        padding="40px"
+        align="end"
+        bgImage={isArtist ? image : ""}
+      >
         <Box padding="20px">
           <Image
             boxSize="160px"
@@ -29,7 +35,9 @@ const GradientLayout = ({
           <Text fontSize="x-small" fontWeight="bold" casing="uppercase">
             {subtitle}
           </Text>
-          <Text fontSize="6xl">{title}</Text>
+          <Text fontSize="6xl" fontWeight={isArtist ? "800" : "400"}>
+            {title}
+          </Text>
           <Text fontSize="x-small">{description}</Text>
         </Box>
       </Flex>
