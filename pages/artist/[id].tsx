@@ -11,7 +11,7 @@ const Artist = ({ artist }) => {
       subtitle="TOP ARTIST"
       description={`${Math.floor(Math.random() * 1000000)} monthly listeners`}
       image={artist.avatar}
-      isArtist={true}
+      isArtist
     >
       <SongsTable songs={artist.songs} />
     </GradientLayout>

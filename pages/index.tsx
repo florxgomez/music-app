@@ -1,12 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  LinkBox,
-  LinkOverlay,
-  ListItem,
-  Text,
-} from "@chakra-ui/layout";
+import { Box, Flex, LinkBox, LinkOverlay, Text } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/react";
 import NextLink from "next/link";
 import GradientLayout from "../components/gradientLayout";
