@@ -6,13 +6,17 @@ import prisma from "../../lib/prisma";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const salt = bycrypt.genSaltSync();
-  const { email, password } = req.body;
-
+  const { email, password, name, lastName } = req.body;
   let user;
 
   try {
     user = await prisma.user.create({
-      data: { email, password: bycrypt.hashSync(password, salt) },
+      data: {
+        firstName: name,
+        lastName,
+        email,
+        password: bycrypt.hashSync(password, salt),
+      },
     });
   } catch (e) {
     res.status(401);

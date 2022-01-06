@@ -3,7 +3,7 @@ import { ListItem, ListIcon, LinkBox, LinkOverlay } from "@chakra-ui/layout";
 
 const MenuItem = ({ menu }) => {
   return (
-    <ListItem paddingX="20px" fontSize="16px" key={menu.name}>
+    <ListItem paddingX="20px" fontSize="16px">
       <LinkBox>
         <NextLink href={menu.route} passHref>
           <LinkOverlay>

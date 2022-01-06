@@ -4,11 +4,11 @@ import { Image } from "@chakra-ui/react";
 const GradientLayout = ({
   color,
   children,
-  image,
   subtitle,
   title,
   description,
   roundImage,
+  image,
 }) => {
   return (
     <Box
