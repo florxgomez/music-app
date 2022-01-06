@@ -24,7 +24,7 @@ import { useStoreActions } from "easy-peasy";
 import { formatTime } from "../lib/formatters";
 
 const Player = ({ songs, activeSong }) => {
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
   const [index, setIndex] = useState(
     songs.findIndex((song) => song.id === activeSong.id)
   );
@@ -197,7 +197,7 @@ const Player = ({ songs, activeSong }) => {
               step={0.1}
               min={0}
               id="player-range"
-              max={duration ? duration.toFixed(2) : 0}
+              max={duration ? (duration.toFixed(2) as unknown as number) : 0}
               onChange={onSeek}
               value={[seek]}
               onChangeStart={() => setIsSeeking(true)}
