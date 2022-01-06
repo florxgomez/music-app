@@ -3,7 +3,6 @@ import {
   Box,
   List,
   Divider,
-  Center,
   LinkBox,
   LinkOverlay,
   ListItem,
